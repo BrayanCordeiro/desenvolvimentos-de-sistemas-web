@@ -58,3 +58,67 @@ header nav ul li a img{/*icones de redes*/
   flex-direction: column;
   padding-left: 24%;
 }
+
+/*Footer*/
+
+footer{
+  background-color: #636bda;
+}
+
+footer .rodape{
+  display: flex;
+  color: white;
+}
+
+.redesSociais img{
+  width: 30px;
+  margin-right: 10px;
+}
+
+footer .rodape ul{
+  width: 25%;
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 60px;
+}
+
+footer ul li a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  line-height: 25px;
+}
+
+footer ul li p {
+  margin-bottom: 15px;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer .rodape ul > p {
+  margin-bottom: 40px;
+}
+
+footer .rodape h3{
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+
+  footer .rodape{
+    flex-direction: column;
+  }
+
+  footer .rodape ul p {
+    max-width: 200px;
+    white-space: break-word;
+  }
+
+  footer .rodape ul{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
