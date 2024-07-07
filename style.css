@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+header {
+    background-color: #636bda;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 13px;
+    padding-top: 1%;
+  }
+header figure{
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+header figure img { /*LOGO*/
+    width: 50%;
+    padding-right: 10px;
+  }
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 35px;
+}
+header nav ul li a {/*distancia entre os icones de redes*/
+    padding: 13px;
+}
+header nav ul li a img{/*icones de redes*/
+    width: 43px;
+}
+
+*MAIN*/
+
+.sessao1 img {
+  padding: 25px;
+}
+.sessao1 {
+  margin-top: 50px;
+  background-image: url(assets/maos.png);
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: 25vh;
+  color: black;
+}
+.sessao1 section {
+  padding-top: 100px;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 24%;
+}
