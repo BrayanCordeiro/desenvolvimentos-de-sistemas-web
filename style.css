@@ -36,7 +36,7 @@ header nav ul li a img{/*icones de redes*/
     width: 43px;
 }
 
-*MAIN*/
+/*MAIN*/
 
 .sessao1 img {
   padding: 25px;
@@ -59,7 +59,84 @@ header nav ul li a img{/*icones de redes*/
   padding-left: 24%;
 }
 
-/*Footer*/
+body, textarea {
+  font-family: sans-serif;
+}
+
+.sessao4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.formBox{
+  display: flex;
+  flex-direction: column;
+  background-color: #969cee;
+  border-radius: 8px;
+  width: 700px;
+}
+
+.formBox .titulo{
+  padding: 24px 32px;
+  font-size: 24px;
+  border-bottom: thin solid #ccc;
+}
+
+.formBox form{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+.formBox input, .formBox textarea, .formBox select{
+  width: calc(50% - 50px);
+  height: 38px;
+  border-radius: 8px;
+  border: thin solid #999;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.formBox input:first-child{
+  margin-right: 16px;
+}
+
+.formBox select{
+  width: 100%;
+}
+
+.formBox textarea{
+  width: 100%;
+  height: 180px;
+  padding: 16px;
+  resize: none;
+}
+
+.formBox button{
+  display: block;
+  border: none;
+  outline: none;
+  margin-left: 18px;
+  width: 180px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #8b60dd;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formBox button:hover{
+  background-color:  #571fc0;
+}
+
+/*FOOTER*/
 
 footer{
   background-color: #636bda;
