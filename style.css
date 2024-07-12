@@ -36,27 +36,69 @@ header nav ul li a img{/*icones de redes*/
     width: 43px;
 }
 
-/*MAIN*/
+*MAIN*/
 
-.sessao1 img {
+.sessao1-img {
   padding: 25px;
 }
-.sessao1 {
-  margin-top: 50px;
+
+.sessao1-section {
+  text-align: center;
+  background-color: #ffffff;
   background-image: url(assets/maos.png);
-  height: 50vh;
+  padding: 100px 25px;
   background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: 25vh;
-  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.sessao1 section {
-  padding-top: 100px;
-  font-size: x-large;
+
+.sessao1-text h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #333;
+}
+
+.sessao1-text p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.buttons {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 24%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #636bda;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e459e;
+}
+
+.sessao2-section{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sessao2-text h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #333;
+}
+
+.sessao2-text p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #666;
 }
 
 body, textarea {
@@ -136,7 +178,7 @@ body, textarea {
   background-color:  #571fc0;
 }
 
-/*FOOTER*/
+/*Footer*/
 
 footer{
   background-color: #636bda;
