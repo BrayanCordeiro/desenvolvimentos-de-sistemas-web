@@ -54,34 +54,33 @@ header nav ul li a img{/*icones de redes*/
 
 .sessao1-text h1 {
   margin-bottom: 10px;
-  font-size: 2em;
-  color: #333;
+  font-size: 2.5em;
+  color: #313131;
 }
 
 .sessao1-text p {
   margin-bottom: 20px;
-  font-size: 1.2em;
-  color: #666;
+  font-size: 1.4em;
+  color: #5e5d5d;
 }
 
-.buttons {
+.sessao1-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }
 
-.btn {
+.sessao1-btn {
   text-decoration: none;
   padding: 10px 20px;
   font-size: 1em;
   color: #ffffff;
   background-color: #636bda;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 10px;
+  transition: background-color 0.5s;
 }
 
-.btn:hover {
+.sessao1-btn:hover {
   background-color: #3e459e;
 }
 
@@ -92,13 +91,13 @@ header nav ul li a img{/*icones de redes*/
 .sessao2-text h1 {
   margin-bottom: 10px;
   font-size: 2em;
-  color: #333;
+  color: #313131;
 }
 
 .sessao2-text p {
   margin-bottom: 20px;
-  font-size: 1.2em;
-  color: #666;
+  font-size: 1.4em;
+  color: #5e5d5d;
 }
 
 body, textarea {
