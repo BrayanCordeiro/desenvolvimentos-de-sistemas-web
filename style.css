@@ -9,7 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding: 13px;
+    padding: 7px;
     padding-top: 1%;
   }
 header figure{
@@ -18,7 +18,7 @@ header figure{
     padding-left: 35px;
 }
 header figure img { /*LOGO*/
-    width: 50%;
+    width: 40%;
     padding-right: 10px;
   }
 header nav ul {
