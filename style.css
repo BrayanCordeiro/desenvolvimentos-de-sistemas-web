@@ -72,7 +72,6 @@ header nav ul {
   padding: 100px 25px;
   background-repeat: no-repeat;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sessao1-text {
@@ -218,17 +217,11 @@ footer .rodape h3{
   font-weight: 600;
 }
 
-
-
-
-
-
 /*encontre o projeto*/
 
 main h2{
   margin-top: 40px;
   margin-bottom: 25px;
-  margin-left: 15%;
   font-size: 1.8em;
   color: #313131;
 }
@@ -239,22 +232,36 @@ main h2{
 
 /*CARDS*/
 
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+}
+
 .card{
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(5, 5, 1, 2);
+  width: 400%;
   padding: 20px;
-  margin: 20px;
-  width: 300px;
+  margin: 10px;
   display: flex;
-	flex-direction: column;
-	align-items: center;
+  flex-direction: column;
+  align-items: center;
 	justify-content: center;
 	text-align: center;
+  border: 1px solid #ddd;
   border-radius: 5%;
 }
+
 .card img{
-  width: 17vw;
-  height: 22vh;
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
   margin-bottom: 20px;
 }
 .card h3{
@@ -263,22 +270,24 @@ main h2{
 .card p{
   margin-bottom: 20px;
 }
-.card button{
+.card-button{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
   padding: 10px 20px;
-  border-radius: 40%;
-  border-color: #636bda;
-  border-style:outset;
-  border-width: 3px;
-  color: #636bda;
-  background-color: rgb(245, 240, 240);
+  color: #ffffff;
+  background-color: #636bda;
+  border-radius: 10%;
   font-size: 0.9em;
   font-weight: bold;
- 
+  transition: background-color 0.5s;
 }
-.cards{
-  display: flex;
-  flex-direction: row;
+
+.card-button:hover {
+  background-color: #3e459e;
 }
+
 
 @media (max-width: 960px) {
 
