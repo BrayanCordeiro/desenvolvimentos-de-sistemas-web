@@ -12,15 +12,24 @@ header {
     padding: 7px;
     padding-top: 1%;
   }
+
 header figure{
     display: flex;
     align-items: center;
     padding-left: 35px;
 }
+
 header figure img { /*LOGO*/
     width: 40%;
     padding-right: 10px;
   }
+
+.header-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 header nav ul {
     display: flex;
     align-items: center;
@@ -29,14 +38,26 @@ header nav ul {
     list-style-type: none;
     padding-right: 35px;
 }
-header nav ul li a {/*distancia entre os icones de redes*/
-    padding: 13px;
-}
-header nav ul li a img{/*icones de redes*/
-    width: 43px;
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
+.header-btn {
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #636bda;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
 
+.header-btn:hover {
+  background-color: #3e459e;
+}
 
 /*MAIN*/
 
@@ -54,6 +75,11 @@ header nav ul li a img{/*icones de redes*/
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.sessao1-text {
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
 .sessao1-text h1 {
   margin-bottom: 10px;
   font-size: 2.5em;
@@ -66,41 +92,6 @@ header nav ul li a img{/*icones de redes*/
   color: #5e5d5d;
 }
 
-.sessao1-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-.sessao1-btn {
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #ffffff;
-  background-color: #636bda;
-  border-radius: 10px;
-  transition: background-color 0.5s;
-}
-
-.sessao1-btn:hover {
-  background-color: #3e459e;
-}
-/*
-.sessao2-section{
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.sessao2-text h1 {
-  margin-bottom: 10px;
-  font-size: 2em;
-  color: #313131;
-}
-
-.sessao2-text p {
-  margin-bottom: 20px;
-  font-size: 1.4em;
-  color: #5e5d5d;
-}*/
 body, textarea {
   font-family: sans-serif;
 }
@@ -179,12 +170,6 @@ body, textarea {
 .formBox button:hover{
   background-color:  #571fc0;
 }
-
-
-
-
-
-
 
 /*Footer*/
 

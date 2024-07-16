@@ -12,30 +12,29 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <a href="index.html"><img src="assets/logo.png" alt="Icone"></a>
-            <h3>####</h3>
         </figure>
+        <div class="header-center">
+            <h3>######</h3>
+        </div>
         <nav>
-            <ul>
-                <li><a href="https://www.instagram.com/"><img src="assets/instagram.png" alt="Instagram" width="60"> </a></li>
-                <li><a href="https://www.youtube.com/"><img src="assets/youtube.png" alt="Youtube" width="60"></a></li>
-                <li><a href="https://www.whatsapp.com/?lang=pt_BR"><img src="assets/whatsapp.png" alt="Whatsapp" width="60"></a></li>
-            </ul>
+            <div class="header-buttons">
+                <a href="#" class="header-btn">Registro</a>
+                <a href="#" class="header-btn">Login</a>
+            </div>
         </nav>
     </header>       
     <main>
         <div class="sessao1-section">
             <div class="sessao1-text">
                 <h1>Bem-vindo ao ####</h1>
-                <p>Registre-se para cadastrar seus dados bancarios</p>
+                <p>Nós somos uma ponte que conecta você ao 
+                    coração de quem mais precisa de apoio no momento.
+                     Você pode se registrar para para uma melhor padronizaçõa 
+                     dos projetos encontrados e maior flexibilidade dos dadso bancarios </p>
             </div>
-            <div class="sessao1-buttons">
-                <a href="#" class="sessao1-btn">Registro</a>
-                <a href="#" class="sessao1-btn">Login</a>
-            </div>
+            
         </div>
-        <!-- segunda seção da pagina inicial -->
-        <!-- terá um catálogo maior de doações, se possível rolavel na horizontal -->
-        <!-- inserir segunda imagem de fundo na linha a baixo (via css)-->
+
         <h2>Encontre o Projeto Ideal para Apoiar</h2>
         <div class="cards">
             <section class="card">
@@ -63,44 +62,25 @@
                 <button>Conhecer</button>
             </section>
         </div>
-        <!-- tercera seção da pagina inicial Checar necessidade-->
-        <!-- fornecerá ao usuario acesso a uma busca 
-            por localização(proximidade)(definir detalhes)-->
-        <!-- inserir terceira imagem de fundo na linha a baixo (via css)-->
-        <!--
-            Checar necessidade
-        <div>
-            <section>
-                <h2>Apoie projetos perto de você</h2>
-                <p>pré visualização de opções 
-                    ou botão para redirecionar(estático)</p>
-            </section>
+        <div class="sessao4">
+        <div class="formBox">
+            <h2 class="titulo">Realize aqui uma doação de forma rápida</h2>
+            <form action="" method="get">
+                <input type="text" name="nome" placeholder="Seu nome">
+                <input type="number" name="doacao" placeholder="Informe o valor a ser doado." step="0.01" name="quantity" min="0">
+                <select name="beneficiados" id="benef">
+                    <option value="InstitudoDoAmor">Instituto do Amor</option>
+                    <option value="Imip">IMIP</option>
+                    <option value="AbrigoDeAnimaisRecife">Abrigo de Animais Recife</option>
+                    <option value="CentroCombateDrogas">Centro de combate as Drogas</option>
+                    <option value="InstituicaoManasses">Instituição Manassés</option>
+                </select>
+                <textarea name="mensagem" placeholder="Digite alguma mensagem de apoio"></textarea>
+
+                <button type="submit">Doar</button>
+            </form>
         </div>
-        -->
-        <!-- quarta seção da pagina inicial -->
-        <!-- fornecerá ao usuario acesso uma forma de doação anonima.-->
-        <!-- inserir terceira imagem de fundo na linha a baixo (via css)-->
-         <div class="sessao4">
-            <div class="formBox">
-                <h2 class="titulo">Realize aqui uma doação de forma rápida</h2>
-                <form action="" method="get">
-                    <input type="text" name="nome" placeholder="Seu nome">
-                    <input type="number" name="doacao" placeholder="Informe o valor a ser doado." step="0.01" name="quantity" min="0">
-                    <select name="beneficiados" id="benef">
-                        <option value="InstitudoDoAmor">Instituto do Amor</option>
-                        <option value="Imip">IMIP</option>
-                        <option value="AbrigoDeAnimaisRecife">Abrigo de Animais Recife</option>
-                        <option value="CentroCombateDrogas">Centro de combate as Drogas</option>
-                        <option value="InstituicaoManasses">Instituição Manassés</option>
-                    </select>
-                    <textarea name="mensagem" placeholder="Digite alguma mensagem de apoio"></textarea>
-
-                    <button type="submit">Doar</button>
-                </form>
-            </div>
-         </div>
-
-        <!-- inserir uma ou mais seções necessárias abaixo -->
+        </div>
     </main>
     <footer>
         <div class="rodape">
