@@ -194,6 +194,11 @@ footer .rodape{
   margin-right: 10px;
 }
 
+.redesSociais a{
+  text-decoration: none;
+  color: inherit;
+}
+
 footer .rodape ul{
   width: 25%;
   margin-top: 30px;
@@ -299,10 +304,67 @@ main h2{
 }
 
 
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
+
+  header{
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+  }
+
+  header nav ul{
+    padding-right: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header figure {
+    padding-left: 0;
+  }
+
+  .header-center {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .header-center .nomeSite{
+    display: none;
+  }
+
+  .sessao1-section {
+  text-align: center;
+  background-color: #ffffff;
+  background-image: none;
+  padding: 100px 25px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  }
+
+  .titulo1{
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .titulo2{
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: none;
+  }
+
 
   footer .rodape{
     flex-direction: column;
+    align-items: center;
   }
 
   footer .rodape ul p {
@@ -311,7 +373,7 @@ main h2{
   }
 
   footer .rodape ul{
-    width: 100%;
+    width: 45%;
     margin-bottom: 30px;
   }
 }
