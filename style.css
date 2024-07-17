@@ -65,6 +65,10 @@ header nav ul {
   padding: 25px;
 }
 
+.titulo1 {
+  margin-left: 50px;
+}
+
 .sessao1-section {
   text-align: center;
   background-color: #ffffff;
@@ -101,7 +105,11 @@ body, textarea {
   align-items: center;
   width: 100%;
   height: 100vh;
-  
+}
+
+.titulo2 {
+  margin-bottom: -30px;
+  margin-left: 50px;
 }
 
 .formBox{
@@ -113,10 +121,10 @@ body, textarea {
   
 }
 
-.formBox .titulo{
-  padding: 24px;
-  font-size: 24px;
-  border-bottom: thin solid #ccc;
+.formBox .tipoProjeto {
+  margin-left: 16px;
+  margin-bottom: 10px;
+  font-size: 1em;
 }
 
 .formBox form{
