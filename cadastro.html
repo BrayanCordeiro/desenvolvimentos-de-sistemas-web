@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Amparo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
+</head>
+<body class="telaCadastro">
+    <div class="divCadastro">
+        <form id="formCad" class="formCadastro">
+            <h2>Cadastro</h2>
+            
+            <div class="divInputs">
+                <input type="text" placeholder="Nome" id="nome" class="required" oninput="validarNome()">
+                <span class="span-required">O nome deve ter ao menos 3 caracteres</span>
+            </div>
+            
+            <div class="divInputs">
+                <input type="text" placeholder="Email" id="emailCadastro" class="required" oninput="validarEmail()">
+                <span class="span-required">Digite um email válido</span>
+            </div>
+
+            <div class="divInputs">
+                <input type="tel" placeholder="Telefone" id="telefone" class="required" oninput="validarTelefone()">
+                <span class="span-required">Digite um telefone válido</span>
+            </div>
+            
+            <div class="divInputs">
+                <input type="password" placeholder="Senha" id="senhaCadastro" class="required" oninput="validarSenhaPrincipal()">
+                <span class="span-required">A senha deve conter no mínimo 8 caracteres</span>
+            </div>
+
+            <div class="divInputs">
+                <input type="password" placeholder="Confirmar Senha" id="confirmarSenha" class="required" oninput="compararSenha()">
+                <span class="span-required">As senhas devem ser compatíveis </span>
+            </div>
+            
+            <input type="submit" value="Cadastrar">
+
+            <a href="login.html">Voltar</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

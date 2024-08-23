@@ -42,6 +42,7 @@ header nav ul {
 .header-buttons {
   display: flex;
   justify-content: center;
+  margin-right: 50px;
   gap: 10px;
 }
 
@@ -303,6 +304,168 @@ main h2{
   background-color: #3e459e;
 }
 
+/*Inicio tela Login*/
+
+.telaLogin {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #313131;
+}
+
+.divLogin {
+  background-color: #636bda;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.formLogin h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.formLogin input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: thin solid #999;
+  font-size: 16px;
+}
+
+.formLogin input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8b60dd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.formLogin input[type="submit"]:hover {
+  background-color: #571fc0;
+}
+
+
+.formLogin a {
+  display: block;
+  margin-top: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.formLogin a:hover {
+  text-decoration: underline;
+}
+
+
+/*Fim tela Login*/
+
+/*Inicio tela Cadastro*/
+
+.telaCadastro {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #313131;
+}
+
+.divCadastro {
+  background-color: #636bda;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.formCadastro h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #ffffff;
+}
+
+.divInputs{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.formCadastro input[type="text"],
+.formCadastro input[type="tel"],
+.formCadastro input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: thin solid #999;
+  outline: none;
+  font-size: 16px;
+}
+
+.span-required{
+  display: none;
+  font-size: 12px;
+  margin: 2px 0 0 0;
+  color: #ffffff;
+  position: absolute;
+  top: calc(93% + 3px);
+}
+
+.formCadastro input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #8b60dd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.formCadastro input[type="submit"]:hover {
+  background-color: #571fc0;
+}
+
+.formCadastro a{
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  background-color: #8b60dd;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.formCadastro a:hover {
+  background-color: #571fc0;
+}
+
+/*Fim tela Cadastro*/
 
 @media (max-width: 1020px) {
 
