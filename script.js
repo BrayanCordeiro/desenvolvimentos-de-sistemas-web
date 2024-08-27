@@ -129,6 +129,60 @@ function compararSenha() {
     
 }
 
+/* 
+o método abaixo tem como objetivo, impedir que o formulário de cadastro
+de novas entidades, sejam enviado no caso de houver campos vazios, para isso
+o mesmo armazena previamente em constantes os valores contidos no formulário e ao clicar no botão
+com id "submit", checa o conteudo inserido. Assim, caso  alguma das constantes criadas 
+não possua valor, o método retorna uma mensagem exigindo o preenchimento do campo vazio.
+*/
+document.getElementById('projectForm').addEventListener('submit', function(event) {
+    const nome = document.querySelector('input[name="nome"]');
+    const nomeProjeto = document.querySelector('input[name="nomeProjeto"]');
+    const beneficiados = document.querySelector('select[name="beneficiados"]');
+    const mensagem = document.querySelector('textarea[name="mensagem"]');
 
+    if (!nome.value || !nomeProjeto.value || !beneficiados.value || !mensagem.value) {
+        alert('Preencha todos os campos!');
+        event.preventDefault();
+    }
+});
 
+/*
+o método abaixo, exibe uma tela de confirmação antes do usuario final enviar os dados para subimissão.
+O mesmo funciona armazenando em constantes os valores previamente inseridos no formulário, e em seguida
+insere os mesmos em um popup de confirmação.
+Ao clicar no botão enviar, o método altera o campo display do css do popupa para "block", para fechar 
+o método altera o mesmo campo para "none" ao clicar no "x" ou fora da tela.
+*/
+function confirmarSubimissao() {
+    const nome = document.querySelector('input[name="nome"]').value;
+    const nomeProjeto = document.querySelector('input[name="nomeProjeto"]').value;
+    const beneficiados = document.querySelector('select[name="beneficiados"]').value;
+    const mensagem = document.querySelector('textarea[name="mensagem"]').value;
 
+    document.getElementById('confirmarNome').textContent = nome;
+    document.getElementById('confirmarProjeto').textContent = nomeProjeto;
+    document.getElementById('confirmarBeneficiados').textContent = beneficiados;
+    document.getElementById('confirmarMensagem').textContent = mensagem;
+
+    const modal = document.getElementById('confirmacao');
+    modal.style.display = 'block';
+
+    const closeBtn = document.getElementsByClassName('fechar')[0];
+    closeBtn.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    const confirmBtn = document.getElementById('confirmarEnvio');
+    confirmBtn.onclick = function() {
+        modal.style.display = 'none';
+        document.getElementById('projectForm').submit();
+    }
+}

@@ -63,23 +63,37 @@
 
         <h2 class="titulo2">Indique Novos Projetos Para Apoiar</h2>
         <div class="sessao4"> 
-        <div class="formBox">
-            <form action="" method="get">
-                <input type="text" name="nome" placeholder="Seu Nome">
-                <input type="text" name="nomeProjeto" placeholder="Nome do Projeto">
-                <h3 class="tipoProjeto">Informe o Tipo do Projeto</h3>
-                <select name="beneficiados" id="benef">
-                    <option value="AbrigoAnimal">Abrigo de Animais</option>
-                    <option value="CasaApoio">Casa de Apoio</option>
-                    <option value="CasaCaridade">Casa de Caridade</option>
-                    <option value="CasaReabilitacao">Casa de Reabilitação</option>
-                    <option value="CombateFome">Combate contra a fome</option>
-                </select>
-                <textarea name="mensagem" placeholder="Descreva Melhor a Instituição"></textarea>
+            <div class="formBox">
+                <form id="projectForm" action="" method="get">
+                    <input type="text" name="nome" placeholder="Seu nome" required>
+                    <input type="text" name="nomeProjeto" placeholder="Nome do projeto" required>
+                    <h3 class="tipoProjeto">Informe o Tipo do Projeto</h3>
+                    <select name="beneficiados" id="benef">
+                        <option value="">Selecione...</option>
+                        <option value="AbrigoAnimal">Abrigo de Animais</option>
+                        <option value="CasaApoio">Casa de Apoio</option>
+                        <option value="CasaCaridade">Casa de Caridade</option>
+                        <option value="CasaReabilitacao">Casa de Reabilitação</option>
+                        <option value="CombateFome">Combate contra a fome</option>
+                    </select>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+                    <div id="confirmacao" class="modal">
+                        <div class="modal-content">
+                            <span class="fechar">&times;</span>
+                            <h3>Confirmar dados</h3>
+                            <p><strong>Nome:</strong> <span id="confirmarNome"></span></p>
+                            <p><strong>Projeto:</strong> <span id="confirmarProjeto"></span></p>
+                            <p><strong>Beneficiados:</strong> <span id="confirmarBeneficiados"></span></p>
+                            <p><strong>Mensagem:</strong> <span id="confirmarMensagem"></span></p>
+                            <button id="confirmarEnvio">Confirmar Envio</button>
+                        </div>
+                    </div>
+    
+                    <textarea name="mensagem" placeholder="Descreva Melhor a Instituição" required></textarea>
+                    <button id="submit" type="button" onclick="confirmarSubimissao()">Enviar</button>
+                </form>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -127,5 +141,6 @@
             </ul>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -191,10 +191,9 @@ main h2{
 .formBox{
   display: flex;
   flex-direction: column;
-  background-color: #969cee;
+  background-color: #636bda;
   border-radius: 8px;
   width: 700px;
-  
 }
 
 .formBox .tipoProjeto {
@@ -243,15 +242,62 @@ main h2{
   width: 180px;
   height: 38px;
   border-radius: 8px;
-  background-color: #8b60dd;
+  background-color: #636bda;
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.5s;
 }
 
 .formBox button:hover{
-  background-color:  #571fc0;
+  background-color:  #3e459e;
+}
+
+
+/*
+POPUP DE CONFIRMAÇÃO
+
+possui atributos para manter o popup inicialmento oculto(alterado pelo método em javascript),
+centralizar na tela,
+definir altura e largura,
+adicionar rolagem,
+tornar o fundo translucido
+além de padronizar as cores, formatos do conteudo e botão de fechar a tela.
+*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  height: 100%; 
+  width: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.3); 
+}
+
+.modal-content {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #636bda;
+  color: white;
+  margin: 15% auto; 
+  max-width: 500px;
+}
+
+.fechar {
+  color: #ffffff;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+  color: rgb(167, 165, 165);
+  cursor: pointer;
 }
 
 /*Footer*/
