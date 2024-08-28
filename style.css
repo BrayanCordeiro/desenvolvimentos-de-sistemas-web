@@ -293,7 +293,8 @@ POPUP DE CONFIRMAÇÃO
 possui atributos para manter o popup inicialmento oculto(alterado pelo método em javascript),
 centralizar na tela,
 definir altura e largura,
-adicionar rolagem,
+limitar o espaço dos campos textuais,
+adicionar rolagem caso o texto fique muito longo,
 tornar o fundo translucido
 além de padronizar as cores, formatos do conteudo e botão de fechar a tela.
 */
@@ -317,6 +318,9 @@ além de padronizar as cores, formatos do conteudo e botão de fechar a tela.
   color: white;
   margin: 15% auto; 
   max-width: 500px;
+  max-height: 80vh; 
+  overflow-y: auto; 
+  word-wrap: break-word; 
 }
 
 .fechar {
