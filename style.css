@@ -620,3 +620,27 @@ footer .rodape h3{
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content:flex-start; /* Centraliza os cards */
+    flex-wrap: nowrap; /* Impede os cards de quebrarem para a próxima linha */
+    
+  }
+  
+  .card {
+    flex: 0 0 100%; /* Exibe 1 card por vez */
+    margin-right: 10px; /* Remove margem entre os cards para evitar quebra de linha */
+
+  }
+  
+  .carousel-container {
+    width: 100%;
+  }
+
+  .card-button {
+    width: 60%;
+    margin-left: 50px;
+  }
+}
